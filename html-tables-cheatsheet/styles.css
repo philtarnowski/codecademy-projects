@@ -1,0 +1,28 @@
+th {
+    background-color: rgb(96, 185, 252);
+    border: 1px solid black;
+    padding: 8px;
+}
+
+td {
+    border: 1px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+  }
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: DarkSlateGray;
+    font-size: 36px;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color: SlateGray;
+    font-size: 24px;
+}
+
+p {
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+}
