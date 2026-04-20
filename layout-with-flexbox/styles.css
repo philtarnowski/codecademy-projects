@@ -1,0 +1,215 @@
+/* ------------------------------------------------------------------
+    CSS Custom Properties
+
+========================================================================== */
+
+:root {
+    --color-bg: rgba(0, 0, 0, .9);
+    --color-text: seashell;
+    --nav-height: 69px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    align-items: center;
+}
+
+main {
+    padding-top: var(--nav-height);
+}
+
+/* ------------------------------------------------------------------
+   Header and Navigation
+
+========================================================================== */
+header {
+    position: fixed;
+    width: 100%;
+    height: var(--nav-height);
+    border-bottom: 1px solid seashell;
+}
+
+nav {
+    display: flex;
+    height: var(--nav-height);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    opacity: 90%;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+li a {
+    color: var(--color-text);
+    text-decoration: underline;
+    font-weight: bold;
+    opacity: 90%;
+}
+
+/* ------------------------------------------------------------------
+   Headers & Paragraphs
+
+========================================================================== */
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+
+
+/* ------------------------------------------------------------------
+   Mission
+
+========================================================================== */
+#mission {
+    display: flex;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    height: 700px;
+    opacity: 50%;
+}
+
+.mission-content {
+    background-color: var(--color-bg);
+    width: 100%;
+    padding: 1rem;
+}
+
+/* ------------------------------------------------------------------
+   Featured Teas
+
+========================================================================== */
+#featured-teas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    background-color: var(--color-bg);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    opacity: 50%;
+}
+
+.tea-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.tea-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.tea-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    padding:10px;
+}
+
+/* ------------------------------------------------------------------
+   Locations
+
+========================================================================== */
+#locations {
+    display: flex;
+    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    opacity: 50%;
+    height: 500px;
+}
+
+.locations-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.location-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: var(--color-bg);
+    padding: 40px 40px;
+}
+
+/* ------------------------------------------------------------------
+   Footer
+
+========================================================================== */
+footer {
+    height: 200px;
+    padding: 2rem 0;
+    text-align: center;
+    opacity: 50%;
+}
+
+.p-footer {
+    text-align: left;
+    padding-left: 20px;
+    color: var(--color-text);
+    font-size: 0.875rem;
+    padding-bottom: 1rem;
+}
